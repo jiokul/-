@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int Max(int n, int *a) {
+int Max(int n, int a[]) {
 	int sum = 0, b = 0;
 	for (int i = 1; i <= n; i++) {
 		if (b > 0) {
