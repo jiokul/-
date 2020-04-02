@@ -1,26 +1,25 @@
 #include <iostream>
 using namespace std;
 int Max(int n, int a[]) {
-	int sum = 0, b = 0;
-	for (int i = 1; i <= n; i++) {
-		if (b > 0) {
-			b += a[i];
+	int sum = 0, j = 0;
+	for (int i = 0; i < n; i++) {
+		if (j > 0) {
+			j += a[i];
 		}
-		else b = a[i];
-		if (b > sum) {
-			sum = b;
+		else j = a[i];
+		if (j > sum) {
+			sum = j;
 		}
-
 	}
 	return sum;
 }
 int main() {
 	int n;
-        int a[10000];
+	int a[10000];
 	cin >> n;
 	while (n != EOF)
 	{
-		for (int i = 1; i <= n; i++) {
+		for (int i = 0; i < n; i++) {
 			cin >> a[i];
 		}
 		cout << Max(n, a);
