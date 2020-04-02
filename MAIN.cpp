@@ -16,10 +16,10 @@ int Max(int n, int a[]) {
 }
 int main() {
 	int n;
+        int a[10000];
 	cin >> n;
 	while (n != EOF)
 	{
-		int a[10000];
 		for (int i = 1; i <= n; i++) {
 			cin >> a[i];
 		}
